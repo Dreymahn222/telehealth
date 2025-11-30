@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting Tools</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Reports & Data Export</h2></header>
+    <main>
+        <section class="report-generation">
+            <h3>Generate Custom Report</h3>
+            <select id="report-type">
+                <option>Revenue Report</option>
+                <option>Usage & Engagement</option>
+                <option>Compliance Report (Audit Logs)</option>
+            </select>
+            <input type="date" placeholder="Date Range Start">
+            <input type="date" placeholder="Date Range End">
+            <button onclick="generateReport('custom')">Generate Report</button>
+            <button onclick="exportReport('csv')">Export as CSV/PDF (FR-ADM-02)</button>
+        </section>
+
+        <section class="scheduled-reports">
+            <h3>Scheduled Reports</h3>
+            <p>Daily Usage Summary: Sent to [Admin Email]</p>
+            <button>Manage Schedules</button>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
