@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+</head>
+<body>
+    <header><h2>Account Settings</h2></header>
+    <main>
+        <section class="personal-info">
+            <h3>Personal Profile</h3>
+            <form id="profile-form">
+                <input type="text" placeholder="Full Name">
+                [span_26](start_span)<input type="text" placeholder="Emergency Contact[span_26](end_span)">
+                [span_27](start_span)<label><input type="checkbox" id="share-preferences"> Share data with doctors (Health Preferences)[span_27](end_span)</label>
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+
+        <section class="security-settings">
+            <h3>Security</h3>
+            [span_28](start_span)<label><input type="checkbox" checked> Multi-Factor Authentication (MFA)[span_28](end_span)</label>
+            <button>Change Password</button>
+            [span_29](start_span)<button id="request-data-deletion">Request Data Deletion (GDPR Right to Erase)[span_29](end_span)</button>
+        </section>
+
+        <section class="notifications">
+            <h3>Notification Preferences</h3>
+            [span_30](start_span)<label><input type="checkbox" checked> Receive Email Reminders[span_30](end_span)</label>
+            [span_31](start_span)<label><input type="checkbox"> Receive SMS Alerts[span_31](end_span)</label>
+        </section>
+    </main>
+</body>
+</html>
