@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Queue</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Provider Credential Verification</h2></header>
+    <main>
+        <div id="pending-providers-list">
+            <div class="verification-item">
+                <h4>Dr. Mark Jones (License #12345)</h4>
+                <p>Status: Auto-checks complete, awaiting manual license review.</p>
+                <button onclick="viewCredentials('12345')">View Documents</button>
+                <button onclick="approveProvider('12345')" class="approve-btn">Approve (FR-PROV-02)</button>
+                <button onclick="rejectProvider('12345')">Reject</button>
+            </div>
+        </div>
+        
+        <section class="audit-log-link">
+            <a href="#">View Verification Audit Log</a>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
