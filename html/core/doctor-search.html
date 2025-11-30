@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor</title>
+</head>
+<body>
+    <header><h2>Doctor Marketplace</h2></header>
+    <main>
+        <aside class="filter-sidebar">
+            <input type="search" placeholder="Search by Doctor Name">
+            <select id="specialization-filter">
+                <option value="">Specialization</option>
+            </select>
+            <select id="language-filter">
+                <option value="">Language</option>
+            </select>
+            [span_9](start_span)<label><input type="checkbox"> Available Now (On-Demand)[span_9](end_span)</label>
+            <button id="apply-filters">Apply</button>
+        </aside>
+
+        <section id="doctor-results">
+            <div class="doctor-card">
+                <h3>Dr. Jane Smith</h3>
+                <p>Specialization: Dermatology | Rating: 4.8/5</p>
+                <p>Consultation Fee: $50</p>
+                <button onclick="window.location.href='provider-profile.html?id=123'">View Profile</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
