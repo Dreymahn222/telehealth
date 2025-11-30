@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Dashboard</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Provider Dashboard & Queue</h2></header>
+    <main>
+        <section class="on-demand-queue">
+            <h3>Active On-Demand Requests</h3>
+            <div id="request-list">
+                <div class="consult-request-card">
+                    <p>Patient A (Triage Score: High Urgency)</p>
+                    <button onclick="acceptConsult('A')">Accept</button>
+                    <button onclick="rejectConsult('A')">Reject</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="scheduled-appointments">
+            <h3>Scheduled Appointments (Today)</h3>
+            <div id="scheduled-list">
+                <div class="appointment-card">
+                    <p>Patient B - 11:00 AM (Video)</p>
+                    <button onclick="joinConsult('B')">Start Consult</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
