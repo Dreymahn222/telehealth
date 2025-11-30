@@ -1,0 +1,201 @@
+/*
+ * TeleHealth Stylesheet (Combined)
+ * NFR-UX-01: Global Resets and Accessibility (WCAG 2.1 AA)
+ */
+:root {
+    --primary-color: #007bff; /* Blue for CTAs and links */
+    --secondary-color: #28a745; /* Green for success/positive actions */
+    --warning-color: #dc3545; /* Red for high-priority alerts/red flags */
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --hover-bg: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding-top: 60px; /* Space for fixed header */
+}
+
+/* --- General Structure --- */
+header {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+/* --- Forms & Inputs --- */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 10px;
+}
+button:hover {
+    opacity: 0.9;
+}
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+.secondary-button {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.approve-btn {
+    background-color: var(--secondary-color);
+}
+.approve-btn:hover {
+    background-color: #218838;
+}
+
+/* --- Core User Specific Styles (Pages 1-12) --- */
+.disclaimer-banner {
+    padding: 15px;
+    background-color: #fff3cd; 
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+#call-emergency {
+    background-color: var(--warning-color);
+    color: white;
+    font-weight: bold;
+    animation: pulse 1.5s infinite; 
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+/* --- Provider Specific Styles (Pages 13-17) --- */
+
+/* Page 15: Consultation Queue */
+.consult-request-card, .appointment-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.on-demand-queue h3 {
+    color: var(--warning-color);
+}
+
+/* Page 16: Clinical Interface */
+.note-taking, .prescription-tool {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+}
+
+/* Page 17: Billing Dashboard */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #eee;
+}
+
+/* --- Admin Specific Styles (Pages 18-22) --- */
+
+/* Page 18: KPI Dashboard */
+.kpi-summary {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.kpi-card {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    border-radius: var(--border-radius);
+    font-size: 1.2em;
+}
+
+/* Page 19: Verification Queue */
+.verification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+.verification-item:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Page 21: Dispute Queue */
+.dispute-item {
+    border: 2px solid var(--warning-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .kpi-summary {
+        flex-direction: column;
+    }
+    .verification-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .verification-item button {
+        margin-top: 10px;
+    }
+}
