@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+</head>
+<body>
+    <header><h2>Guided Symptom Input</h2></header>
+    <main>
+        <div id="triage-steps">
+            <section data-step="1">
+                <h3>Step 1: Tell us about the patient</h3>
+                <input type="number" placeholder="Age" required>
+                </section>
+            
+            <section data-step="2" class="active">
+                <h3>Step 2: What are your primary symptoms?</h3>
+                <textarea placeholder="e.g., Fever, headache, duration 3 days..." required></textarea>
+                </section>
+            
+            <section data-step="3">
+                <h3>Step 3: History</h3>
+                </section>
+
+            <button id="prev-step" disabled>Previous</button>
+            <button id="next-step">Next</button>
+            <button id="submit-symptoms" style="display:none;">Get Results</button>
+        </div>
+    </main>
+</body>
+</html>
