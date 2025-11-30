@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Admin</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>TeleHealth Admin Dashboard (FR-ADM-01)</h2></header>
+    <main>
+        <section class="kpi-summary">
+            <h3>Key Performance Indicators</h3>
+            <div class="kpi-card">Total Users: 15,000</div>
+            <div class="kpi-card">Total Revenue (MTD): $X,XXX</div>
+            <div class="kpi-card">Verification Queue: 5 Pending</div>
+        </section>
+
+        <section class="quick-links">
+            <button onclick="window.location.href='verification-queue.html'">Go to Verification Queue</button>
+            <button onclick="window.location.href='transaction-monitoring.html'">Transaction Monitoring</button>
+            <button onclick="window.location.href='reports.html'">Generate Reports</button>
+        </section>
+        
+        <section class="system-health">
+            <h3>System Status</h3>
+            <p>Target Uptime: 99.9% (NFR-AV-01)</p>
+            <p>Current Status: All systems operational.</p>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
