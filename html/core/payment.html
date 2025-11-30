@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+</head>
+<body>
+    <header><h2>Payment for Appointment</h2></header>
+    <main>
+        <h3>Appointment Summary</h3>
+        <p>Provider: Dr. Jane Smith</p>
+        <p>Date/Time: 2025-10-01 @ 10:00 AM</p>
+        <p>Total Due: **$50.00**</p>
+
+        <section class="payment-gateway-form">
+            <label for="card-number">Credit/Debit Card Details:</label>
+            <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+            <label><input type="checkbox"> Save payment method for future</label>
+            [span_15](start_span)<p>Supported Methods: Credit/Debit Cards, Mobile Money, Wallet[span_15](end_span)</p>
+            <button id="complete-payment">Complete Payment</button>
+        </section>
+
+        <p id="confirmation-message" style="display:none;">Payment successful! [span_16](start_span)[span_17](start_span)Confirmation sent to your email/SMS[span_16](end_span)[span_17](end_span).</p>
+    </main>
+</body>
+</html>
