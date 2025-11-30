@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User & Provider Management</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>User & Provider Account Management</h2></header>
+    <main>
+        <input type="search" placeholder="Search by Name, Email, or ID">
+        <select id="user-type-filter">
+            <option>All Users</option>
+            <option>Patients</option>
+            <option>Providers</option>
+        </select>
+        <button>Search</button>
+
+        <section id="search-results">
+            <div class="user-record">
+                <p>Patient ID 789 | Jane Doe</p>
+                <button>View Medical Records (NFR-SEC-04 Audit)</button>
+                <button>Suspend Account</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
