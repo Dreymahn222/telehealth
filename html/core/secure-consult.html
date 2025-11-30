@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Consultation</title>
+</head>
+<body>
+    <header><h2>Consultation with Dr. Smith</h2></header>
+    <main class="consultation-layout">
+        <section class="video-window">
+            <video id="provider-video" autoplay></video>
+            <video id="user-video" muted autoplay></video>
+        </section>
+
+        <section class="chat-sidebar">
+            <div id="secure-chat-history">
+                </div>
+            <input type="text" placeholder="Send a message...">
+            <button>Send</button>
+            
+            <div class="tool-options">
+                [span_18](start_span)<button id="file-upload">Upload File/Image[span_18](end_span)</button>
+                <button id="screen-share">Share Screen</button>
+                <button id="end-call">End Call</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
