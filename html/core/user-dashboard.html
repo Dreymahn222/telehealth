@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TeleHealth Dashboard</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome Back, [User Name]</h2>
+        <a href="account-settings.html">Settings</a>
+    </header>
+    <main>
+        <section class="upcoming-appointments">
+            <h3>Upcoming Appointments</h3>
+            <div class="appointment-card">
+                <p>Dr. Smith (Video) - 2025-10-01 @ 10:00 AM</p>
+                [span_19](start_span)<button>Reschedule[span_19](end_span)</button> | [span_20](start_span)<button>Cancel[span_20](end_span)</button>
+            </div>
+        </section>
+        
+        <section class="recent-activity">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li>Last Triage Session: [Date] <a href="#">View Results</a></li>
+                <li>Last Consultation: Dr. Jones [Date] <a href="medical-records.html">View Notes</a></li>
+            </ul>
+        </section>
+
+        <section class="quick-access">
+            [span_21](start_span)<button onclick="window.location.href='medical-records.html'">View Medical Records[span_21](end_span)</button>
+            <button onclick="window.location.href='doctor-search.html'">Book a New Appointment</button>
+        </section>
+    </main>
+</body>
+</html>
