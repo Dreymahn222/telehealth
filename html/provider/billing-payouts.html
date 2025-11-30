@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payouts Dashboard</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>My Billing & Payouts</h2></header>
+    <main>
+        <section class="earnings-summary">
+            <h3>Current Balance: $X,XXX.XX</h3>
+            <p>Platform Commission Rate: [10%]</p>
+            <p>Next Payout Scheduled: [Date] (FR-PAY-03)</p>
+        </section>
+
+        <section class="transaction-history">
+            <h3>Consultation Transaction Log</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Total Fee</th>
+                        <th>Platform Cut</th>
+                        <th>Net Payout</th>
+                    </tr>
+                </thead>
+                <tbody id="payout-table-body">
+                    </tbody>
+            </table>
+        </section>
+        
+        <section class="payment-info">
+            <h3>Bank Details</h3>
+            </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
