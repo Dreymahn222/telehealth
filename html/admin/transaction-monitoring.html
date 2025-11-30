@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction & Dispute Management</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Transaction Monitoring</h2></header>
+    <main>
+        <section class="transaction-filters">
+            <select>
+                <option>All Transactions</option>
+                <option>Pending Payouts</option>
+                <option>Refund Requests</option>
+            </select>
+            <input type="date" placeholder="Start Date">
+            <button>Filter</button>
+        </section>
+
+        <section id="dispute-queue">
+            <h3>Pending Disputes (FR-PAY-02)</h3>
+            <div class="dispute-item">
+                <p>Transaction ID #5001 - Patient X vs Dr. Y</p>
+                <p>Reason: Failed video connection (NFR-AV-02)</p>
+                <button onclick="processRefund('5001', 'partial')">Process Partial Refund</button>
+                <button onclick="closeDispute('5001')">Close Dispute</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
