@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Interface</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Consultation Summary & Action (Patient C)</h2></header>
+    <main>
+        <section class="patient-history-summary">
+            </section>
+
+        <section class="note-taking">
+            <h3>Clinical Notes (FR-COM-04)</h3>
+            <textarea placeholder="Enter SOAP notes, diagnosis, and follow-up instructions..." rows="8"></textarea>
+            <button id="save-notes">Save Notes to Medical Record (FR-MR-01)</button>
+        </section>
+
+        <section class="prescription-tool">
+            <h3>Digital Prescription (FR-MR-02)</h3>
+            <input type="text" placeholder="Medication Name, Dosage">
+            <button>Add Medication</button>
+            <button id="issue-prescription">Issue & Electronically Sign Prescription</button>
+        </section>
+        
+        <section class="transfer-referral">
+             <button onclick="transferConsult()">Transfer/Refer Patient (Requires Consent) (FR-COM-05)</button>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
