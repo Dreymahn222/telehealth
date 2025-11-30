@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Registration</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Provider Registration: Step 1 of 3</h2></header>
+    <main>
+        <h3>Professional Details (FR-PROV-01)</h3>
+        <form id="provider-registration-form">
+            <input type="text" placeholder="Full Legal Name" required>
+            <input type="text" placeholder="Professional License Number" required>
+            <input type="email" placeholder="Professional Email" required>
+            <input type="password" placeholder="Set Password" required>
+            
+            <label for="specialization">Primary Specialization:</label>
+            <select id="specialization" required>
+                <option value="GP">General Practitioner</option>
+                <option value="Derm">Dermatology</option>
+            </select>
+
+            <button type="button" onclick="goToStep2()">Next: Credentials Upload</button>
+            <p class="verification-note">Verification by Admin is required before accepting paid consultations (FR-PROV-02).</p>
+        </form>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
