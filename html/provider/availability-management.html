@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Availability</title>
+    <link rel="stylesheet" href="styles/telehealth_styles.css"> 
+</head>
+<body>
+    <header><h2>Manage Availability & Consultation Types</h2></header>
+    <main>
+        <section class="consultation-setup">
+            <h3>Consultation Settings (FR-PROV-03)</h3>
+            <label>Video Consultation Fee:</label>
+            <input type="number" placeholder="e.g., 50.00" required>
+            
+            <label>Accepted Modalities:</label>
+            <label><input type="checkbox" checked> Text Chat</label>
+            <label><input type="checkbox" checked> Audio Call</label>
+            <label><input type="checkbox"> In-Person</label>
+        </section>
+
+        <section id="availability-calendar-tool">
+            <h3>Set Weekly Schedule</h3>
+            <button id="save-availability">Save Availability</button>
+        </section>
+    </main>
+    <script src="scripts/telehealth_scripts.js"></script>
+</body>
+</html>
